@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Montserrat Regular;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat:400");
+}
+
+@font-face {
+  font-family: Montserrat Semi Bold;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat:600");
+}
+
+@font-face {
+  font-family: Montserrat Bold;
+  src: url("https://fonts.googleapis.com/css?family=Montserrat:700");
+}
+
+@mixin header($font-size, $line-height) {
+  font-family: Montserrat Bold;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $white;
+}
+
+@mixin subheader($font-size, $line-height) {
+  font-family: Montserrat Semi Bold;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $white;
+}
+
+@mixin text($font-size, $line-height) {
+  font-family: Montserrat Regular;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $white;
+}
