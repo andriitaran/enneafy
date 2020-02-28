@@ -5,6 +5,7 @@ body {
 }
 
 .welcome {
+  animation: fadein 4s;
   &-container {
     margin: 32px;
     display: flex;
@@ -46,5 +47,14 @@ body {
         transform: scale(1.05);
       }
     }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
