@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Back from "../assets/icons/back.svg";
 
 export default function Type(props) {
   if (props.types === undefined) {
@@ -32,6 +34,13 @@ export default function Type(props) {
           allowtransparency="true"
           allow="encrypted-media"
         ></iframe>
+        <Link to="/types">
+          <img
+            className="type-container__back"
+            src="https://toomeyco.com/wp-content/themes/toomey/img/icons/angle-left-white.svg"
+            alt=""
+          />
+        </Link>
       </div>
     </section>
   );

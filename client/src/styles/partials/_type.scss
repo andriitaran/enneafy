@@ -8,8 +8,20 @@
     &__header {
       @include subheader(32px, 32px);
       margin: 32px 0 64px 0;
+    //   text-shadow: 10px rgba(0, 0, 0, 0.75);
     }
     &__player {
+      -webkit-box-shadow: 10px 15px 36px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 15px 36px -8px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 15px 36px -8px rgba(0, 0, 0, 0.75);
+    }
+    &__back {
+      margin-top: 32px;
+      height: 100px;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

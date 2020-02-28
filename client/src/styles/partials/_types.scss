@@ -9,10 +9,23 @@
     &__header {
       @include subheader(32px, 32px);
       margin: 32px 0 64px 0;
+      
     }
-    &__type {
+    &__typenum {
       height: 100px;
       margin: 8px;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    &__back {
+      margin-top: 32px;
+      height: 100px;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

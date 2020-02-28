@@ -8,7 +8,7 @@ export default function Welcome() {
       <div>
         <section className="welcome">
           <div className="welcome-container">
-            <span className="welcome-container__header">ENNEAFY</span>
+            <span className="welcome-container__header">Enneafy</span>
             <img className="welcome-container__logo" src={Logo} alt="logo" />
             <span className="welcome-container__text">
               Enneagram is one of the most powerful and insightful tools for

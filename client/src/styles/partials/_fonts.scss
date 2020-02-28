@@ -13,6 +13,11 @@
   src: url(../assets/fonts/Montserrat-Bold.otf);
 }
 
+@font-face {
+  font-family: Lobster;
+  src: url(../assets/fonts/Lobster.otf);
+}
+
 @mixin header($font-size, $line-height) {
   font-family: Montserrat Bold;
   font-size: $font-size;
@@ -29,6 +34,20 @@
 
 @mixin text($font-size, $line-height) {
   font-family: Montserrat Regular;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $white;
+}
+
+@mixin logo($font-size, $line-height) {
+  font-family: Lobster;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $white;
+}
+
+@mixin button($font-size, $line-height) {
+  font-family: Lobster;
   font-size: $font-size;
   line-height: $line-height;
   color: $white;
