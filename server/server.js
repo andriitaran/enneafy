@@ -4,10 +4,11 @@ require("dotenv").config();
 const { PORT, BACKEND_URL } = process.env;
 const cors = require("cors");
 
+app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
-// get, post, put methods for /api/books
+// get
 const playlistData = require("./routes/api/playlists");
 app.use("/api/playlists", playlistData);
 
