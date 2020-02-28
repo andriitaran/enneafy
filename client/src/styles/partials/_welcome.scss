@@ -1,0 +1,51 @@
+// WELCOME PAGE
+body {
+  background-color: $primary;
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(56, 228, 174, 1) 42%,
+  //   rgb(160, 190, 223) 71%
+  // );
+  color: $white;
+}
+
+.welcome {
+  &-container {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+      @include logo(48px, 48px);
+      align-self: center;
+      margin-bottom: 16px;
+    }
+    &__logo {
+      height: 250px;
+      margin-bottom: 32px;
+    }
+    &__text {
+      @include text(20px, 24px);
+      margin-bottom: 16px;
+      text-align: justify;
+      text-justify: inter-word;
+      font-weight: bolder;
+    }
+    &__test,
+    &__type {
+      @include subheader(24px, 24px);
+      background-color: $secondary;
+      border: none;
+      border-radius: 30px;
+      color: $white;
+      width: 250px;
+      height: 48px;
+      margin-bottom: 16px;
+      transition: all 0.5s ease;
+      &:hover {
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+}
