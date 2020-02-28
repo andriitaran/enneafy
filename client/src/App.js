@@ -1,74 +1,31 @@
 import React, { Component } from "react";
 import "./styles/main.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import axios from "axios";
 import Welcome from "./components/Welcome";
 import Types from "./components/Types";
 import Type from "./components/Type";
-import One from "./assets/icons/one.svg";
-import Two from "./assets/icons/two.svg";
-import Three from "./assets/icons/three.svg";
-import Four from "./assets/icons/four.svg";
-import Five from "./assets/icons/five.svg";
-import Six from "./assets/icons/six.svg";
-import Seven from "./assets/icons/seven.svg";
-import Eight from "./assets/icons/eight.svg";
-import Nine from "./assets/icons/nine.svg";
 
 export default class App extends Component {
   state = {
-    types: [
-      {
-        id: 1,
-        img: One,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 2,
-        img: Two,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 3,
-        img: Three,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 4,
-        img: Four,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 5,
-        img: Five,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 6,
-        img: Six,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 7,
-        img: Seven,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 8,
-        img: Eight,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      },
-      {
-        id: 9,
-        img: Nine,
-        src: "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
-      }
-    ]
+    types: []
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    axios({
+      method: "get",
+      url: `http://localhost:5000/api/playlists`,
+      headers: { "Access-Control-Allow-Origin": "*" }
+    }).then(res => {
+      this.setState({
+        types: res.data
+      });
+    });
+  }
 
   componentDidUpdate() {
     console.log("component updated!");
+    console.log(this.state);
   }
 
   render() {

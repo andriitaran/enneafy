@@ -16,9 +16,13 @@ export default function Welcome() {
               helps us to see ourselves at a deeper, more objective level and
               can be of invaluable assistance on our path to self-knowledge.
             </span>
-            <Link to="https://www.truity.com/test/enneagram-personality-test">
+            <a
+              href="https://www.truity.com/test/enneagram-personality-test"
+              target="_blank"
+            >
               <button className="welcome-container__test">TAKE THE TEST</button>
-            </Link>
+            </a>
+
             <Link to="/types">
               <button className="welcome-container__type">
                 I KNOW MY TYPE!

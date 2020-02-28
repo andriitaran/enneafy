@@ -24,7 +24,7 @@ export default class Types extends Component {
           </Link>
         );
       });
-      if (this.state.selected) {
+      if (this.state.selected && this.props.types.length !== 0) {
         return <Type types={this.props.types} />;
       } else {
         return (

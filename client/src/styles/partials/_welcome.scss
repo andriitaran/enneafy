@@ -1,11 +1,6 @@
 // WELCOME PAGE
 body {
   background-color: $primary;
-  // background: linear-gradient(
-  //   0deg,
-  //   rgba(56, 228, 174, 1) 42%,
-  //   rgb(160, 190, 223) 71%
-  // );
   color: $white;
 }
 
@@ -18,7 +13,7 @@ body {
     &__header {
       @include logo(48px, 48px);
       align-self: center;
-      margin-bottom: 16px;
+      margin-bottom: 32px;
     }
     &__logo {
       height: 250px;
@@ -26,7 +21,7 @@ body {
     }
     &__text {
       @include text(20px, 24px);
-      margin-bottom: 16px;
+      margin-bottom: 32px;
       text-align: justify;
       text-justify: inter-word;
       font-weight: bolder;
@@ -42,9 +37,13 @@ body {
       height: 48px;
       margin-bottom: 16px;
       transition: all 0.5s ease;
+      &:focus {
+        outline: 0;
+      }
       &:hover {
         cursor: pointer;
         outline: none;
+        transform: scale(1.05);
       }
     }
   }
