@@ -1,0 +1,15 @@
+.type {
+  &-container {
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header {
+      @include subheader(32px, 32px);
+      margin: 32px 0 64px 0;
+    }
+    &__player {
+    }
+  }
+}

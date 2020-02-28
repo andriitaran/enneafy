@@ -1,0 +1,18 @@
+.types {
+  display: flex;
+  &-container {
+    margin: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &__header {
+      @include subheader(32px, 32px);
+      margin: 32px 0 64px 0;
+    }
+    &__type {
+      height: 100px;
+      margin: 8px;
+    }
+  }
+}

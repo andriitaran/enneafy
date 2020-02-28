@@ -1,16 +1,16 @@
 @font-face {
   font-family: Montserrat Regular;
-  src: url("https://fonts.googleapis.com/css?family=Montserrat:400");
+  src: url(../assets/fonts/Montserrat-Regular.otf);
 }
 
 @font-face {
   font-family: Montserrat Semi Bold;
-  src: url("https://fonts.googleapis.com/css?family=Montserrat:600");
+  src: url(../assets/fonts/Montserrat-SemiBold.otf);
 }
 
 @font-face {
   font-family: Montserrat Bold;
-  src: url("https://fonts.googleapis.com/css?family=Montserrat:700");
+  src: url(../assets/fonts/Montserrat-Bold.otf);
 }
 
 @mixin header($font-size, $line-height) {
