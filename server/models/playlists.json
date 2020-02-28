@@ -1,56 +1,47 @@
 [
   {
-    "id": "63JnZOBUe3rYWtEG7jVkfl",
-    "type": "1",
-    "title": "Type One - The Reformer",
+    "id": "1",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/63JnZOBUe3rYWtEG7jVkfl"
   },
   {
-    "id": "2Uxq7XTEcoU3p9MAXiS74c",
-    "type": "2",
-    "title": "Type Two - The Helper",
+    "id": "2",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/2Uxq7XTEcoU3p9MAXiS74c"
   },
   {
-    "id": "0UFeA0lSwG1Hy2rf4myLUv",
-    "type": "3",
-    "title": "Type Three - The Achiever",
+    "id": "3",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/0UFeA0lSwG1Hy2rf4myLUv"
   },
   {
-    "id": "7cWTW0ZWNHzoVYMI6wJlAM",
-    "type": "4",
-    "title": "Type Four - The Individualist",
+    "id": "4",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/7cWTW0ZWNHzoVYMI6wJlAM"
   },
   {
-    "id": "5d5ix1VLqljYsOrz4OBfmz",
-    "type": "5",
-    "title": "Type Five - The Investigator",
+    "id": "5",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/5d5ix1VLqljYsOrz4OBfmz"
   },
   {
-    "id": "49TIdNyu8MjjX2bjsqeQSA",
-    "type": "6",
-    "title": "Type Six - The Loyalist",
+    "id": "6",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/49TIdNyu8MjjX2bjsqeQSA"
   },
   {
-    "id": "0UWVcmTSr0Ag9GtwgXzvlM",
-    "type": "7",
-    "title": "Type Seven - The Enthusiast",
+    "id": "7",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/0UWVcmTSr0Ag9GtwgXzvlM"
   },
   {
-    "id": "4UAi5oAAUqFKeAp3Q8dskM",
-    "type": "8",
-    "title": "Type Eight - The Challenger",
+    "id": "8",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/4UAi5oAAUqFKeAp3Q8dskM"
   },
   {
-    "id": "0ZQcDh0vCO59wLXVxCinqg",
-    "type": "9",
-    "title": "Type Nine - The Peacemaker",
+    "id": "9",
+    "image": "",
     "src": "https://open.spotify.com/embed/playlist/0ZQcDh0vCO59wLXVxCinqg"
   }
 ]
