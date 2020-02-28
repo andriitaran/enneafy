@@ -1,4 +1,5 @@
 .types {
+  animation: fadein 1s;
   display: flex;
   &-container {
     margin: 32px;
@@ -9,13 +10,12 @@
     &__header {
       @include subheader(32px, 32px);
       margin: 32px 0 64px 0;
-      
     }
     &__typenum {
       height: 100px;
       margin: 8px;
       transition: transform 0.5s ease;
-      
+
       &:hover {
         transform: scale(1.1);
       }
@@ -28,5 +28,14 @@
         transform: scale(1.1);
       }
     }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
