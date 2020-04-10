@@ -1,0 +1,44 @@
+.type {
+  &-container {
+    margin: 0 auto;
+    animation: fadein 1s;
+    background-color: $primary;
+    color: $white;
+    max-width: 414px;
+    max-height: 736px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__header {
+      @include subheader(32px, 32px);
+      margin: 32px 0 64px 0;
+      //   text-shadow: 10px rgba(0, 0, 0, 0.75);
+    }
+    &__player {
+      animation: fadein 5s;
+      height: 340px;
+      // -webkit-box-shadow: 10px 15px 36px -8px rgba(0, 0, 0, 0.75);
+      // -moz-box-shadow: 10px 15px 36px -8px rgba(0, 0, 0, 0.75);
+      // box-shadow: 10px 15px 36px -8px rgba(0, 0, 0, 0.75);
+    }
+    &__back {
+      margin-top: 32px;
+      height: 100px;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
