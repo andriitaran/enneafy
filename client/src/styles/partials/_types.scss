@@ -1,8 +1,12 @@
 .types {
-  animation: fadein 1s;
-  display: flex;
   &-container {
-    margin: 32px;
+    margin: 0 auto;
+    animation: fadein 2s;
+    background-color: $primary;
+    color: $white;
+    max-width: 414px;
+    max-height: 736px;
+    padding: 16px 32px;
     display: flex;
     justify-content: center;
     align-items: center;
