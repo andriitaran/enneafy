@@ -6,7 +6,7 @@ A mobile app that will help you to find out your enneagram type and play curated
 
 ## PROBLEM
 
-This app was made during 1-Day Sprint during my diploma program at BrainStation. We were tasked to make a website/web application using technologies we've learned so far - HTMl, CSS(Sass), Javascript, React, Node, Express and Web API's.
+This app was made during 1-Day Sprint during my diploma program at BrainStation. We were tasked to make a website/web application using technologies we've learned so far - HTMl, CSS(Sass), Javascript, React, Node, Express and Web APIs.
 
 ## APP VIEWPORT :
 
